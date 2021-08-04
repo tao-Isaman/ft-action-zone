@@ -21,3 +21,13 @@ then
 ```
 docker-compose up -d
 ```
+
+get data
+```
+docker-compose run --rm freqtrade download-data --pairs BTC/BUSD --exchange binance --days 365 -t 1h
+```
+
+run backtest
+```
+docker-compose run --rm freqtrade backtesting --config user_data/config.json --strategy ActionZone --timerange 20200804-20210803 -i 1h
+```
