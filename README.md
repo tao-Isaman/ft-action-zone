@@ -31,3 +31,4 @@ run backtest
 ```
 docker-compose run --rm freqtrade backtesting --config user_data/config.json --strategy ActionZone --timerange 20200804-20210803 -i 1h
 ```
+
